@@ -12,6 +12,9 @@
 		AE1888422096640600CE0A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1888402096640600CE0A58 /* Main.storyboard */; };
 		AE1888442096640A00CE0A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1888432096640A00CE0A58 /* Assets.xcassets */; };
 		AE1888472096640A00CE0A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1888452096640A00CE0A58 /* LaunchScreen.storyboard */; };
+		AE1888522096741B00CE0A58 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE18884F2096741B00CE0A58 /* RxCocoa.framework */; };
+		AE1888532096741B00CE0A58 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1888502096741B00CE0A58 /* RxSwift.framework */; };
+		AE1888542096741B00CE0A58 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1888512096741B00CE0A58 /* RxTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		AE1888432096640A00CE0A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE1888462096640A00CE0A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE1888482096640A00CE0A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE18884F2096741B00CE0A58 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		AE1888502096741B00CE0A58 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		AE1888512096741B00CE0A58 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE1888522096741B00CE0A58 /* RxCocoa.framework in Frameworks */,
+				AE1888532096741B00CE0A58 /* RxSwift.framework in Frameworks */,
+				AE1888542096741B00CE0A58 /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				AE18883B2096640600CE0A58 /* kammak */,
 				AE18883A2096640600CE0A58 /* Products */,
+				AE18884E2096741A00CE0A58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,16 @@
 			path = kammak;
 			sourceTree = "<group>";
 		};
+		AE18884E2096741A00CE0A58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE18884F2096741B00CE0A58 /* RxCocoa.framework */,
+				AE1888502096741B00CE0A58 /* RxSwift.framework */,
+				AE1888512096741B00CE0A58 /* RxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +94,7 @@
 				AE1888352096640600CE0A58 /* Sources */,
 				AE1888362096640600CE0A58 /* Frameworks */,
 				AE1888372096640600CE0A58 /* Resources */,
+				AE1888552096743200CE0A58 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +150,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE1888552096743200CE0A58 /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			name = "Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE1888352096640600CE0A58 /* Sources */ = {
@@ -282,6 +323,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX6ZJG76MC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = kammak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +345,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX6ZJG76MC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = kammak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
