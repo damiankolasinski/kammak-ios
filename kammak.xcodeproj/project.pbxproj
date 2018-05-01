@@ -12,9 +12,9 @@
 		AE1888422096640600CE0A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1888402096640600CE0A58 /* Main.storyboard */; };
 		AE1888442096640A00CE0A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1888432096640A00CE0A58 /* Assets.xcassets */; };
 		AE1888472096640A00CE0A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1888452096640A00CE0A58 /* LaunchScreen.storyboard */; };
-		AE1888522096741B00CE0A58 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE18884F2096741B00CE0A58 /* RxCocoa.framework */; };
-		AE1888532096741B00CE0A58 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1888502096741B00CE0A58 /* RxSwift.framework */; };
-		AE1888542096741B00CE0A58 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1888512096741B00CE0A58 /* RxTest.framework */; };
+		AE30F391209900FA00FC0ACB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE18884F2096741B00CE0A58 /* RxCocoa.framework */; };
+		AE30F392209900FA00FC0ACB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1888502096741B00CE0A58 /* RxSwift.framework */; };
+		AE30F3942099038000FC0ACB /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1888512096741B00CE0A58 /* RxTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE1888522096741B00CE0A58 /* RxCocoa.framework in Frameworks */,
-				AE1888532096741B00CE0A58 /* RxSwift.framework in Frameworks */,
-				AE1888542096741B00CE0A58 /* RxTest.framework in Frameworks */,
+				AE30F391209900FA00FC0ACB /* RxCocoa.framework in Frameworks */,
+				AE30F392209900FA00FC0ACB /* RxSwift.framework in Frameworks */,
+				AE30F3942099038000FC0ACB /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +320,7 @@
 		AE18884C2096640A00CE0A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX6ZJG76MC;
@@ -342,6 +343,7 @@
 		AE18884D2096640A00CE0A58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX6ZJG76MC;
