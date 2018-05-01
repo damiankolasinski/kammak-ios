@@ -14,7 +14,6 @@
 		AE1888472096640A00CE0A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1888452096640A00CE0A58 /* LaunchScreen.storyboard */; };
 		AE30F391209900FA00FC0ACB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE18884F2096741B00CE0A58 /* RxCocoa.framework */; };
 		AE30F392209900FA00FC0ACB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1888502096741B00CE0A58 /* RxSwift.framework */; };
-		AE30F3942099038000FC0ACB /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1888512096741B00CE0A58 /* RxTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 			files = (
 				AE30F391209900FA00FC0ACB /* RxCocoa.framework in Frameworks */,
 				AE30F392209900FA00FC0ACB /* RxSwift.framework in Frameworks */,
-				AE30F3942099038000FC0ACB /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
