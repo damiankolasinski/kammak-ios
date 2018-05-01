@@ -17,6 +17,7 @@
 		AE30F3AC20990DE500FC0ACB /* kammakUI.h in Headers */ = {isa = PBXBuildFile; fileRef = AE30F3AA20990DE500FC0ACB /* kammakUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE30F3AF20990DE500FC0ACB /* kammakUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE30F3A820990DE500FC0ACB /* kammakUI.framework */; };
 		AE30F3B020990DE500FC0ACB /* kammakUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE30F3A820990DE500FC0ACB /* kammakUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE30F3C4209917AD00FC0ACB /* TestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30F3C3209917AD00FC0ACB /* TestViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		AE30F3A820990DE500FC0ACB /* kammakUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = kammakUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE30F3AA20990DE500FC0ACB /* kammakUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kammakUI.h; sourceTree = "<group>"; };
 		AE30F3AB20990DE500FC0ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE30F3C3209917AD00FC0ACB /* TestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				AE30F3AA20990DE500FC0ACB /* kammakUI.h */,
 				AE30F3AB20990DE500FC0ACB /* Info.plist */,
+				AE30F3C3209917AD00FC0ACB /* TestViewViewController.swift */,
 			);
 			path = kammakUI;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 					};
 					AE30F3A720990DE500FC0ACB = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -274,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE30F3C4209917AD00FC0ACB /* TestViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +477,7 @@
 		AE30F3B220990DE500FC0ACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -491,6 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.damiankolasinski.kammakUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -501,6 +508,7 @@
 		AE30F3B320990DE500FC0ACB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
