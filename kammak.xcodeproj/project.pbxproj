@@ -14,7 +14,35 @@
 		AE1888472096640A00CE0A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1888452096640A00CE0A58 /* LaunchScreen.storyboard */; };
 		AE30F391209900FA00FC0ACB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE18884F2096741B00CE0A58 /* RxCocoa.framework */; };
 		AE30F392209900FA00FC0ACB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1888502096741B00CE0A58 /* RxSwift.framework */; };
+		AE30F3AC20990DE500FC0ACB /* kammakUI.h in Headers */ = {isa = PBXBuildFile; fileRef = AE30F3AA20990DE500FC0ACB /* kammakUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE30F3AF20990DE500FC0ACB /* kammakUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE30F3A820990DE500FC0ACB /* kammakUI.framework */; };
+		AE30F3B020990DE500FC0ACB /* kammakUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE30F3A820990DE500FC0ACB /* kammakUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE30F3C4209917AD00FC0ACB /* TestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30F3C3209917AD00FC0ACB /* TestViewViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE30F3AD20990DE500FC0ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE1888312096640600CE0A58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE30F3A720990DE500FC0ACB;
+			remoteInfo = kammakUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE30F3B420990DE500FC0ACB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE30F3B020990DE500FC0ACB /* kammakUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE1888392096640600CE0A58 /* kammak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kammak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +55,10 @@
 		AE18884F2096741B00CE0A58 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		AE1888502096741B00CE0A58 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		AE1888512096741B00CE0A58 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		AE30F3A820990DE500FC0ACB /* kammakUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = kammakUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE30F3AA20990DE500FC0ACB /* kammakUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kammakUI.h; sourceTree = "<group>"; };
+		AE30F3AB20990DE500FC0ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE30F3C3209917AD00FC0ACB /* TestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +68,14 @@
 			files = (
 				AE30F391209900FA00FC0ACB /* RxCocoa.framework in Frameworks */,
 				AE30F392209900FA00FC0ACB /* RxSwift.framework in Frameworks */,
+				AE30F3AF20990DE500FC0ACB /* kammakUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE30F3A420990DE500FC0ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				AE18883B2096640600CE0A58 /* kammak */,
+				AE30F3A920990DE500FC0ACB /* kammakUI */,
 				AE18883A2096640600CE0A58 /* Products */,
 				AE18884E2096741A00CE0A58 /* Frameworks */,
 			);
@@ -55,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				AE1888392096640600CE0A58 /* kammak.app */,
+				AE30F3A820990DE500FC0ACB /* kammakUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,7 +124,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE30F3A920990DE500FC0ACB /* kammakUI */ = {
+			isa = PBXGroup;
+			children = (
+				AE30F3AA20990DE500FC0ACB /* kammakUI.h */,
+				AE30F3AB20990DE500FC0ACB /* Info.plist */,
+				AE30F3C3209917AD00FC0ACB /* TestViewViewController.swift */,
+			);
+			path = kammakUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE30F3A520990DE500FC0ACB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE30F3AC20990DE500FC0ACB /* kammakUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		AE1888382096640600CE0A58 /* kammak */ = {
@@ -93,15 +156,35 @@
 				AE1888362096640600CE0A58 /* Frameworks */,
 				AE1888372096640600CE0A58 /* Resources */,
 				AE1888552096743200CE0A58 /* Copy Frameworks */,
+				AE30F3B420990DE500FC0ACB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AE30F3AE20990DE500FC0ACB /* PBXTargetDependency */,
 			);
 			name = kammak;
 			productName = kammak;
 			productReference = AE1888392096640600CE0A58 /* kammak.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AE30F3A720990DE500FC0ACB /* kammakUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE30F3B120990DE500FC0ACB /* Build configuration list for PBXNativeTarget "kammakUI" */;
+			buildPhases = (
+				AE30F3A320990DE500FC0ACB /* Sources */,
+				AE30F3A420990DE500FC0ACB /* Frameworks */,
+				AE30F3A520990DE500FC0ACB /* Headers */,
+				AE30F3A620990DE500FC0ACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kammakUI;
+			productName = kammakUI;
+			productReference = AE30F3A820990DE500FC0ACB /* kammakUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -115,6 +198,10 @@
 				TargetAttributes = {
 					AE1888382096640600CE0A58 = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					AE30F3A720990DE500FC0ACB = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -132,6 +219,7 @@
 			projectRoot = "";
 			targets = (
 				AE1888382096640600CE0A58 /* kammak */,
+				AE30F3A720990DE500FC0ACB /* kammakUI */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +232,13 @@
 				AE1888472096640A00CE0A58 /* LaunchScreen.storyboard in Resources */,
 				AE1888442096640A00CE0A58 /* Assets.xcassets in Resources */,
 				AE1888422096640600CE0A58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE30F3A620990DE500FC0ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +274,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE30F3A320990DE500FC0ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE30F3C4209917AD00FC0ACB /* TestViewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE30F3AE20990DE500FC0ACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE30F3A720990DE500FC0ACB /* kammakUI */;
+			targetProxy = AE30F3AD20990DE500FC0ACB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AE1888402096640600CE0A58 /* Main.storyboard */ = {
@@ -327,6 +438,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = kammak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,6 +462,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = kammak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +471,67 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE30F3B220990DE500FC0ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GX6ZJG76MC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = kammakUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.damiankolasinski.kammakUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE30F3B320990DE500FC0ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GX6ZJG76MC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = kammakUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.damiankolasinski.kammakUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -378,6 +552,15 @@
 			buildConfigurations = (
 				AE18884C2096640A00CE0A58 /* Debug */,
 				AE18884D2096640A00CE0A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE30F3B120990DE500FC0ACB /* Build configuration list for PBXNativeTarget "kammakUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE30F3B220990DE500FC0ACB /* Debug */,
+				AE30F3B320990DE500FC0ACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
