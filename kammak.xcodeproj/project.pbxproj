@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0FF943209B9DB400F8F0DA /* cradle.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0FF941209B9DB400F8F0DA /* cradle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE0FF946209B9DB400F8F0DA /* cradle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0FF93F209B9DB300F8F0DA /* cradle.framework */; };
+		AE0FF947209B9DB400F8F0DA /* cradle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE0FF93F209B9DB300F8F0DA /* cradle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE0FF94D209B9DF700F8F0DA /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0FF94C209B9DF700F8F0DA /* OptionalExtensions.swift */; };
 		AE18883D2096640600CE0A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18883C2096640600CE0A58 /* AppDelegate.swift */; };
 		AE18883F2096640600CE0A58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18883E2096640600CE0A58 /* ViewController.swift */; };
 		AE1888422096640600CE0A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1888402096640600CE0A58 /* Main.storyboard */; };
@@ -21,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AE0FF944209B9DB400F8F0DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE1888312096640600CE0A58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0FF93E209B9DB300F8F0DA;
+			remoteInfo = cradle;
+		};
 		AE30F3AD20990DE500FC0ACB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE1888312096640600CE0A58 /* Project object */;
@@ -38,6 +49,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AE30F3B020990DE500FC0ACB /* kammakUI.framework in Embed Frameworks */,
+				AE0FF947209B9DB400F8F0DA /* cradle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +57,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE0FF93F209B9DB300F8F0DA /* cradle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cradle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0FF941209B9DB400F8F0DA /* cradle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cradle.h; sourceTree = "<group>"; };
+		AE0FF942209B9DB400F8F0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0FF94C209B9DF700F8F0DA /* OptionalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
 		AE1888392096640600CE0A58 /* kammak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kammak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE18883C2096640600CE0A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE18883E2096640600CE0A58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +78,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE0FF93B209B9DB300F8F0DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE1888362096640600CE0A58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,6 +92,7 @@
 				AE30F391209900FA00FC0ACB /* RxCocoa.framework in Frameworks */,
 				AE30F392209900FA00FC0ACB /* RxSwift.framework in Frameworks */,
 				AE30F3AF20990DE500FC0ACB /* kammakUI.framework in Frameworks */,
+				AE0FF946209B9DB400F8F0DA /* cradle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,11 +106,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE0FF940209B9DB400F8F0DA /* cradle */ = {
+			isa = PBXGroup;
+			children = (
+				AE0FF94B209B9DD500F8F0DA /* Extensions */,
+				AE0FF941209B9DB400F8F0DA /* cradle.h */,
+				AE0FF942209B9DB400F8F0DA /* Info.plist */,
+			);
+			path = cradle;
+			sourceTree = "<group>";
+		};
+		AE0FF94B209B9DD500F8F0DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE0FF94C209B9DF700F8F0DA /* OptionalExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AE1888302096640600CE0A58 = {
 			isa = PBXGroup;
 			children = (
 				AE18883B2096640600CE0A58 /* kammak */,
 				AE30F3A920990DE500FC0ACB /* kammakUI */,
+				AE0FF940209B9DB400F8F0DA /* cradle */,
 				AE18883A2096640600CE0A58 /* Products */,
 				AE18884E2096741A00CE0A58 /* Frameworks */,
 			);
@@ -97,6 +140,7 @@
 			children = (
 				AE1888392096640600CE0A58 /* kammak.app */,
 				AE30F3A820990DE500FC0ACB /* kammakUI.framework */,
+				AE0FF93F209B9DB300F8F0DA /* cradle.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +181,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		AE0FF93C209B9DB300F8F0DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0FF943209B9DB400F8F0DA /* cradle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE30F3A520990DE500FC0ACB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +200,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AE0FF93E209B9DB300F8F0DA /* cradle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0FF94A209B9DB400F8F0DA /* Build configuration list for PBXNativeTarget "cradle" */;
+			buildPhases = (
+				AE0FF93A209B9DB300F8F0DA /* Sources */,
+				AE0FF93B209B9DB300F8F0DA /* Frameworks */,
+				AE0FF93C209B9DB300F8F0DA /* Headers */,
+				AE0FF93D209B9DB300F8F0DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cradle;
+			productName = cradle;
+			productReference = AE0FF93F209B9DB300F8F0DA /* cradle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		AE1888382096640600CE0A58 /* kammak */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE18884B2096640A00CE0A58 /* Build configuration list for PBXNativeTarget "kammak" */;
@@ -162,6 +232,7 @@
 			);
 			dependencies = (
 				AE30F3AE20990DE500FC0ACB /* PBXTargetDependency */,
+				AE0FF945209B9DB400F8F0DA /* PBXTargetDependency */,
 			);
 			name = kammak;
 			productName = kammak;
@@ -196,6 +267,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = DamianKolasinski;
 				TargetAttributes = {
+					AE0FF93E209B9DB300F8F0DA = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
 					AE1888382096640600CE0A58 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -220,11 +295,19 @@
 			targets = (
 				AE1888382096640600CE0A58 /* kammak */,
 				AE30F3A720990DE500FC0ACB /* kammakUI */,
+				AE0FF93E209B9DB300F8F0DA /* cradle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE0FF93D209B9DB300F8F0DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE1888372096640600CE0A58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +348,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE0FF93A209B9DB300F8F0DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0FF94D209B9DF700F8F0DA /* OptionalExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE1888352096640600CE0A58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,6 +376,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AE0FF945209B9DB400F8F0DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0FF93E209B9DB300F8F0DA /* cradle */;
+			targetProxy = AE0FF944209B9DB400F8F0DA /* PBXContainerItemProxy */;
+		};
 		AE30F3AE20990DE500FC0ACB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AE30F3A720990DE500FC0ACB /* kammakUI */;
@@ -312,6 +408,65 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AE0FF948209B9DB400F8F0DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GX6ZJG76MC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = cradle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.damiankolasinski.cradle;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE0FF949209B9DB400F8F0DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GX6ZJG76MC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = cradle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.damiankolasinski.cradle;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		AE1888492096640A00CE0A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -538,6 +693,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE0FF94A209B9DB400F8F0DA /* Build configuration list for PBXNativeTarget "cradle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0FF948209B9DB400F8F0DA /* Debug */,
+				AE0FF949209B9DB400F8F0DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AE1888342096640600CE0A58 /* Build configuration list for PBXProject "kammak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
