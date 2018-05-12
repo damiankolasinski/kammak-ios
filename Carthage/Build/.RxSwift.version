@@ -3,19 +3,19 @@
   "iOS" : [
     {
       "name" : "RxBlocking",
-      "hash" : "0dc7e01b3ad9aa5da0d055041201c9b513958c488bdbaba76d90fa8dfbb67c54"
+      "hash" : "e36e99820ce05c38e4c809f81307f7e6fbf06b12d49788ec869826548f685328"
     },
     {
       "name" : "RxTest",
-      "hash" : "d8332aa711ae99924d2c1abb63d54f3be8f51c91e4520dd595049abcc058fe69"
+      "hash" : "822de5c475cb7aa8a2191b0c0e248b581a06e5c8be1077390fc631b2e6bc40c4"
     },
     {
       "name" : "RxCocoa",
-      "hash" : "f2c04e5a23b85cf9ff2019e1bab5d6c0437b7a6d726931f80ad2af3b95aa0509"
+      "hash" : "4bf8d0fdd9088905c8e85b3428fd680fcc03105a9eb6e291c7db66536f57bbad"
     },
     {
       "name" : "RxSwift",
-      "hash" : "294aa64749b6fe3e3a74e8152f1d3128e39832b9d62d69d16be43d53d0627993"
+      "hash" : "f8ea333bace0b1e6871d0c78b2ce1551db4e41ed8ed1dac5fe8dbe0e2a1da2e5"
     }
   ]
 }
