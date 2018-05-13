@@ -14,6 +14,8 @@
 		AE115AFD20A7047C009AA375 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE115AFA20A7047C009AA375 /* Alamofire.framework */; };
 		AE115AFE20A7047C009AA375 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE115AFB20A7047C009AA375 /* Result.framework */; };
 		AE115AFF20A7047C009AA375 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE115AFC20A7047C009AA375 /* RxMoya.framework */; };
+		AE115B1F20A73EAD009AA375 /* ProfileManagment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE115B1E20A73EAD009AA375 /* ProfileManagment.swift */; };
+		AE115B2120A7412D009AA375 /* FatSecretApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE115B2020A7412D009AA375 /* FatSecretApi.swift */; };
 		AE18883D2096640600CE0A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18883C2096640600CE0A58 /* AppDelegate.swift */; };
 		AE18883F2096640600CE0A58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18883E2096640600CE0A58 /* ViewController.swift */; };
 		AE1888422096640600CE0A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1888402096640600CE0A58 /* Main.storyboard */; };
@@ -25,6 +27,13 @@
 		AE30F3AF20990DE500FC0ACB /* kammakUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE30F3A820990DE500FC0ACB /* kammakUI.framework */; };
 		AE30F3B020990DE500FC0ACB /* kammakUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE30F3A820990DE500FC0ACB /* kammakUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE30F3C4209917AD00FC0ACB /* TestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30F3C3209917AD00FC0ACB /* TestViewViewController.swift */; };
+		AECE17FD20A8A817002899DF /* AuthorizationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE17FC20A8A817002899DF /* AuthorizationPlugin.swift */; };
+		AECE17FF20A8B0F0002899DF /* ResourceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE17FE20A8B0F0002899DF /* ResourceResponse.swift */; };
+		AECE180220A8B5D1002899DF /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE180120A8B5D1002899DF /* Provider.swift */; };
+		AECE180420A8BF2B002899DF /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE180320A8BF2B002899DF /* Foods.swift */; };
+		AECE180620A8C048002899DF /* FoodsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE180520A8C048002899DF /* FoodsProvider.swift */; };
+		AECE180820A8C1EC002899DF /* Serving.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE180720A8C1EC002899DF /* Serving.swift */; };
+		AECE180A20A8C256002899DF /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE180920A8C256002899DF /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +76,8 @@
 		AE115AFA20A7047C009AA375 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		AE115AFB20A7047C009AA375 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		AE115AFC20A7047C009AA375 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		AE115B1E20A73EAD009AA375 /* ProfileManagment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManagment.swift; sourceTree = "<group>"; };
+		AE115B2020A7412D009AA375 /* FatSecretApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatSecretApi.swift; sourceTree = "<group>"; };
 		AE1888392096640600CE0A58 /* kammak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kammak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE18883C2096640600CE0A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE18883E2096640600CE0A58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +92,13 @@
 		AE30F3AA20990DE500FC0ACB /* kammakUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kammakUI.h; sourceTree = "<group>"; };
 		AE30F3AB20990DE500FC0ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE30F3C3209917AD00FC0ACB /* TestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewController.swift; sourceTree = "<group>"; };
+		AECE17FC20A8A817002899DF /* AuthorizationPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPlugin.swift; sourceTree = "<group>"; };
+		AECE17FE20A8B0F0002899DF /* ResourceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceResponse.swift; sourceTree = "<group>"; };
+		AECE180120A8B5D1002899DF /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		AECE180320A8BF2B002899DF /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
+		AECE180520A8C048002899DF /* FoodsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsProvider.swift; sourceTree = "<group>"; };
+		AECE180720A8C1EC002899DF /* Serving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serving.swift; sourceTree = "<group>"; };
+		AECE180920A8C256002899DF /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +137,42 @@
 		AE115AED20A7030B009AA375 /* FatSecretAPI */ = {
 			isa = PBXGroup;
 			children = (
+				AECE180020A8B5B6002899DF /* ResourceProviders */,
 				AE115AEE20A7030B009AA375 /* FatSecretAPI.h */,
 				AE115AEF20A7030B009AA375 /* Info.plist */,
+				AE115B2020A7412D009AA375 /* FatSecretApi.swift */,
+				AE115B1C20A73E6C009AA375 /* Models */,
+				AE115B2220A742AB009AA375 /* Plugins */,
+				AE115B1D20A73E6E009AA375 /* Targets */,
 			);
 			path = FatSecretAPI;
+			sourceTree = "<group>";
+		};
+		AE115B1C20A73E6C009AA375 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AECE17FE20A8B0F0002899DF /* ResourceResponse.swift */,
+				AECE180720A8C1EC002899DF /* Serving.swift */,
+				AECE180920A8C256002899DF /* Food.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE115B1D20A73E6E009AA375 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				AE115B1E20A73EAD009AA375 /* ProfileManagment.swift */,
+				AECE180320A8BF2B002899DF /* Foods.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		AE115B2220A742AB009AA375 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				AECE17FC20A8A817002899DF /* AuthorizationPlugin.swift */,
+			);
+			path = Plugins;
 			sourceTree = "<group>";
 		};
 		AE1888302096640600CE0A58 = {
@@ -181,6 +231,15 @@
 				AE30F3C3209917AD00FC0ACB /* TestViewViewController.swift */,
 			);
 			path = kammakUI;
+			sourceTree = "<group>";
+		};
+		AECE180020A8B5B6002899DF /* ResourceProviders */ = {
+			isa = PBXGroup;
+			children = (
+				AECE180120A8B5D1002899DF /* Provider.swift */,
+				AECE180520A8C048002899DF /* FoodsProvider.swift */,
+			);
+			path = ResourceProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +333,7 @@
 				TargetAttributes = {
 					AE115AEB20A7030B009AA375 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					AE1888382096640600CE0A58 = {
 						CreatedOnToolsVersion = 9.3;
@@ -360,6 +420,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECE180620A8C048002899DF /* FoodsProvider.swift in Sources */,
+				AECE17FF20A8B0F0002899DF /* ResourceResponse.swift in Sources */,
+				AECE17FD20A8A817002899DF /* AuthorizationPlugin.swift in Sources */,
+				AE115B2120A7412D009AA375 /* FatSecretApi.swift in Sources */,
+				AECE180420A8BF2B002899DF /* Foods.swift in Sources */,
+				AECE180A20A8C256002899DF /* Food.swift in Sources */,
+				AECE180220A8B5D1002899DF /* Provider.swift in Sources */,
+				AECE180820A8C1EC002899DF /* Serving.swift in Sources */,
+				AE115B1F20A73EAD009AA375 /* ProfileManagment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +487,7 @@
 		AE115AF520A7030B009AA375 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -440,6 +510,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.damiankolasinski.FatSecretAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -450,6 +521,7 @@
 		AE115AF620A7030B009AA375 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
